@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_fS2XIH17Eemcmp6bgxVOsg" entityName="New Allocation">
+  <targetResourceEnvironment_Allocation href="SamrtCityResourceEnvironment.resourceenvironment#/"/>
+  <system_Allocation href="SmartCityAssembly.system#_74TcAH14Eemcmp6bgxVOsg"/>
+  <allocationContexts_Allocation id="_38at4H17Eemcmp6bgxVOsg" entityName="Allocation_Assembly_SectionController">
+    <resourceContainer_AllocationContext href="SamrtCityResourceEnvironment.resourceenvironment#_6UlKAH15Eemcmp6bgxVOsg"/>
+    <assemblyContext_AllocationContext href="SmartCityAssembly.system#_DO8SYH15Eemcmp6bgxVOsg"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_4erGYH17Eemcmp6bgxVOsg" entityName="Allocation_Assembly_TrafficLightController">
+    <resourceContainer_AllocationContext href="SamrtCityResourceEnvironment.resourceenvironment#_VYl_YH15Eemcmp6bgxVOsg"/>
+    <assemblyContext_AllocationContext href="SmartCityAssembly.system#_Bjh5cH15Eemcmp6bgxVOsg"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_-fbu8H17Eemcmp6bgxVOsg" entityName="Allocation_Assembly_Server">
+    <resourceContainer_AllocationContext href="SamrtCityResourceEnvironment.resourceenvironment#_1O2J0H16Eemcmp6bgxVOsg"/>
+    <assemblyContext_AllocationContext href="SmartCityAssembly.system#_CU1akH15Eemcmp6bgxVOsg"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_WOYAwH2NEemcmp6bgxVOsg" entityName="Allocation_Assembly_Sensor">
+    <resourceContainer_AllocationContext href="SamrtCityResourceEnvironment.resourceenvironment#_VYl_YH15Eemcmp6bgxVOsg"/>
+    <assemblyContext_AllocationContext href="SmartCityAssembly.system#__6h7UH14Eemcmp6bgxVOsg"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

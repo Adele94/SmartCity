@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" xmlns:stoex="http://sdq.ipd.uka.de/StochasticExpressions/2.2" id="_SrnCoHZQEem16d8sIzA5-Q" entityName="New Repository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_f3q0QHZQEem16d8sIzA5-Q" entityName="Sensor">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_is0ccHZQEem16d8sIzA5-Q" entityName="OperationProvidedRole1" providedInterface__OperationProvidedRole="_YfE2EHZQEem16d8sIzA5-Q"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_t8fZ4HZQEem16d8sIzA5-Q" entityName="OperationRequiredRole1" requiredInterface__OperationRequiredRole="_kcK6MHZQEem16d8sIzA5-Q"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_itXPAHZQEem16d8sIzA5-Q" describedService__SEFF="_bSc8oHZQEem16d8sIzA5-Q">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_itZrQHZQEem16d8sIzA5-Q" successor_AbstractAction="_27L9cHyWEemcmp6bgxVOsg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_itaSUHZQEem16d8sIzA5-Q" predecessor_AbstractAction="_NsK3sHZREem16d8sIzA5-Q"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_NsK3sHZREem16d8sIzA5-Q" entityName="ExternalCallAction1" predecessor_AbstractAction="_27L9cHyWEemcmp6bgxVOsg" successor_AbstractAction="_itaSUHZQEem16d8sIzA5-Q" calledService_ExternalService="_ponw8HZQEem16d8sIzA5-Q" role_ExternalService="_t8fZ4HZQEem16d8sIzA5-Q">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="data.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="data"/>
+        </inputVariableUsages__CallAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_27L9cHyWEemcmp6bgxVOsg" entityName="InternalAction1" predecessor_AbstractAction="_itZrQHZQEem16d8sIzA5-Q" successor_AbstractAction="_NsK3sHZREem16d8sIzA5-Q">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="10"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="10"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_BIjHoQ3KEdyouMqirZIhzQ"/>
+        </resourceDemand_Action>
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="10"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_nvHX4KkREdyEA_b89s7q9w"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_vZIXAHZQEem16d8sIzA5-Q" entityName="TrafficLightController">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_zF6KwHZQEem16d8sIzA5-Q" entityName="OperationProvidedRole1" providedInterface__OperationProvidedRole="_kcK6MHZQEem16d8sIzA5-Q"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_44hCkHZQEem16d8sIzA5-Q" entityName="OperationRequiredRole1" requiredInterface__OperationRequiredRole="_z6ebQHZQEem16d8sIzA5-Q"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_zGYr4HZQEem16d8sIzA5-Q" describedService__SEFF="_ponw8HZQEem16d8sIzA5-Q">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_zGYr4XZQEem16d8sIzA5-Q" successor_AbstractAction="_KwNxsHyYEemcmp6bgxVOsg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_zGYr4nZQEem16d8sIzA5-Q" predecessor_AbstractAction="_RpN8EHZREem16d8sIzA5-Q"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_RpN8EHZREem16d8sIzA5-Q" entityName="ExternalCallAction1" predecessor_AbstractAction="_KwNxsHyYEemcmp6bgxVOsg" successor_AbstractAction="_zGYr4nZQEem16d8sIzA5-Q" calledService_ExternalService="_2olnUHZQEem16d8sIzA5-Q" role_ExternalService="_44hCkHZQEem16d8sIzA5-Q">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="data.VALUE * 10"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="data"/>
+        </inputVariableUsages__CallAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_KwNxsHyYEemcmp6bgxVOsg" entityName="InternalAction1" predecessor_AbstractAction="_zGYr4XZQEem16d8sIzA5-Q" successor_AbstractAction="_RpN8EHZREem16d8sIzA5-Q">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="100"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="100"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_BIjHoQ3KEdyouMqirZIhzQ"/>
+        </resourceDemand_Action>
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="10"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_nvHX4KkREdyEA_b89s7q9w"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_5vzP4HZQEem16d8sIzA5-Q" entityName="Server">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_7lpXMHZQEem16d8sIzA5-Q" entityName="OperationProvidedRole1" providedInterface__OperationProvidedRole="_z6ebQHZQEem16d8sIzA5-Q"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_7lrMYHZQEem16d8sIzA5-Q" describedService__SEFF="_2olnUHZQEem16d8sIzA5-Q">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_7lrMYXZQEem16d8sIzA5-Q" successor_AbstractAction="_-kZfoHyYEemcmp6bgxVOsg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_7lrzcHZQEem16d8sIzA5-Q" predecessor_AbstractAction="_-kZfoHyYEemcmp6bgxVOsg"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_-kZfoHyYEemcmp6bgxVOsg" entityName="InternalAction1" predecessor_AbstractAction="_7lrMYXZQEem16d8sIzA5-Q" successor_AbstractAction="_7lrzcHZQEem16d8sIzA5-Q">
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="data.VALUE * 100"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_oro4gG3fEdy4YaaT-RYrLQ"/>
+        </resourceDemand_Action>
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="data.VALUE * 100"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_BIjHoQ3KEdyouMqirZIhzQ"/>
+        </resourceDemand_Action>
+        <resourceDemand_Action>
+          <specification_ParametericResourceDemand specification="10"/>
+          <requiredResource_ParametricResourceDemand href="pathmap://PCM_MODELS/Palladio.resourcetype#_nvHX4KkREdyEA_b89s7q9w"/>
+        </resourceDemand_Action>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_YfE2EHZQEem16d8sIzA5-Q" entityName="ISensor">
+    <signatures__OperationInterface id="_bSc8oHZQEem16d8sIzA5-Q" entityName="sendDataFromSensorToTL">
+      <parameters__OperationSignature parameterName="data">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_kcK6MHZQEem16d8sIzA5-Q" entityName="ITrafficLightController">
+    <signatures__OperationInterface id="_ponw8HZQEem16d8sIzA5-Q" entityName="sendDataFromTLToServer">
+      <parameters__OperationSignature parameterName="data">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_z6ebQHZQEem16d8sIzA5-Q" entityName="IServer">
+    <signatures__OperationInterface id="_2olnUHZQEem16d8sIzA5-Q" entityName="generateNewAlgorithm">
+      <parameters__OperationSignature parameterName="data">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+</repository:Repository>

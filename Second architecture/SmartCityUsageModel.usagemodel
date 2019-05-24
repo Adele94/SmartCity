@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<usagemodel:UsageModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stoex="http://sdq.ipd.uka.de/StochasticExpressions/2.2" xmlns:usagemodel="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2">
+  <usageScenario_UsageModel id="_oylxcHe8EemRQKHxP4aOzA" entityName="UsageScenario">
+    <scenarioBehaviour_UsageScenario id="_ssmv8He8EemRQKHxP4aOzA" entityName="ScenarioBehaviour">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_ssnXAHe8EemRQKHxP4aOzA" successor="_unzRUHe8EemRQKHxP4aOzA"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_ssnXAXe8EemRQKHxP4aOzA" predecessor="_unzRUHe8EemRQKHxP4aOzA"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_unzRUHe8EemRQKHxP4aOzA" entityName="EntryLevelSystemCall1" successor="_ssnXAXe8EemRQKHxP4aOzA" predecessor="_ssnXAHe8EemRQKHxP4aOzA">
+        <providedRole_EntryLevelSystemCall href="SmartCityAssembly.system#_EZppgHe8EemRQKHxP4aOzA"/>
+        <operationSignature__EntryLevelSystemCall href="SmartCityRepository.repository#_bSc8oHZQEem16d8sIzA5-Q"/>
+        <inputParameterUsages_EntryLevelSystemCall>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="IntPMF[(1000; 0.2)(2000; 0.2)(3000; 0.2)(1500; 0.1)(5000; 0.1)(500; 0.2)]"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="data"/>
+        </inputParameterUsages_EntryLevelSystemCall>
+      </actions_ScenarioBehaviour>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="usagemodel:ClosedWorkload" population="1">
+      <thinkTime_ClosedWorkload specification="10.0"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+</usagemodel:UsageModel>
